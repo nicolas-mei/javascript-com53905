@@ -1,0 +1,26 @@
+.grid_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 250px auto 250px;
+    grid-area: 
+    "nav    nav    nav    nav" 
+    "header header header header"
+     "main   main   main   aside"
+    "footer footer footer footer";
+    row-gap: 20px;
+}
+.nav_content {
+    grid-area: nav;
+}
+.header_content {
+    grid-area: header;
+}
+.main_content {
+    grid-area: main;
+}
+.aside_content {
+    grid-area: aside;
+}
+.footer_content {
+    grid-area: footer;
+}
