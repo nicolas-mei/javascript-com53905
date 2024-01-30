@@ -1,0 +1,46 @@
+.{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+} 
+
+.grid_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:  100px 300px 1200px 600px;
+    grid-template-areas: 
+    "nav    nav    nav    nav" 
+    "header header header header"
+    "main   main   main   aside"
+    "footer footer footer footer";
+
+}
+.nav_content {
+    grid-area: nav;
+}
+.header_content {
+    grid-area: header;
+}
+.main_content {
+    grid-area: main;
+}
+.aside_content {
+    grid-area: aside;
+}
+.footer_content {
+    grid-area: footer;
+}
+
+.logo_header img {
+    width: 250px;
+}
+.redes_sociales_header a img {
+    width: 40px;
+    border-radius: 50px;
+    border: black 2px ;
+}
+.carrito_de_compras a img {
+    width: 50px;
+    border-radius: 50px;
+    border: black 2px ;
+}
